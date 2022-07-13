@@ -114,7 +114,7 @@ async def autobot():
     if who.username:
         username = who.username + "_bot"
     else:
-        username = "ultroid_" + (str(who.id))[5:] + "_bot"
+        username = "Bay_" + (str(who.id))[5:] + "_bot"
     bf = "@BotFather"
     await ultroid_bot(UnblockRequest(bf))
     await ultroid_bot.send_message(bf, "/cancel")
@@ -207,8 +207,8 @@ async def autopilot():
         try:
             r = await ultroid_bot(
                 CreateChannelRequest(
-                    title="My Ultroid Logs",
-                    about="My Ultroid Log Group\n\n Join @TeamUltroid",
+                    title="My Userbot Logs",
+                    about="My Userbot Log Group\n\n Join @ygabutkan",
                     megagroup=True,
                 ),
             )
@@ -277,7 +277,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/27c6812becf6f376cbb10.jpg", "channelphoto.jpg"
+            "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg", "channelphoto.jpg"
         )
         ll = await ultroid_bot.upload_file(photo)
         try:
@@ -308,8 +308,8 @@ async def customize():
             sir = f"@{ultroid_bot.me.username}"
         file = random.choice(
             [
-                "https://telegra.ph/file/92cd6dbd34b0d1d73a0da.jpg",
-                "https://telegra.ph/file/a97973ee0425b523cdc28.jpg",
+                "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg",
+                "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg",
                 "resources/extras/ultroid_assistant.jpg",
             ]
         )
@@ -346,7 +346,7 @@ async def customize():
         await asyncio.sleep(1)
         await ultroid_bot.send_message(
             "botfather",
-            f"✨ Powerful Ultroid Assistant Bot ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @TeamUltroid ✨",
+            f"✨ Powerful Userbot Assistant Bot ✨\n✨ Master ~ {sir} ✨\n\n✨ Powered By ~ @baytoddd ✨",
         )
         await asyncio.sleep(2)
         await msg.edit("Completed **Auto Customisation** at @BotFather.")
@@ -385,7 +385,7 @@ async def plug(plugin_channels):
                 try:
                     load_addons(plugin.split("/")[-1].replace(".py", ""))
                 except Exception as e:
-                    LOGS.info(f"Ultroid - PLUGIN_CHANNEL - ERROR - {plugin}")
+                    LOGS.info(f"Userbot - PLUGIN_CHANNEL - ERROR - {plugin}")
                     LOGS.exception(e)
                     os.remove(plugin)
         except Exception as er:
@@ -402,13 +402,13 @@ async def ready():
     chat_id = udB.get_key("LOG_CHANNEL")
     spam_sent = None
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
-        MSG = """🎇 **Thanks for Deploying Ultroid Userbot!**
+        MSG = """🎇 **Thanks for Deploying Bay Userbot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://telegra.ph/file/54a917cc9dbb94733ea5f.jpg"
+        PHOTO = "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:
-        MSG = f"**Ultroid has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(ultroid_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @TeamUltroid\n➖➖➖➖➖➖➖➖➖➖"
+        MSG = f"**Bay Userbot has been deployed!**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode**: {inline_mention(ultroid_bot.me)}\n**Assistant**: @{asst.me.username}\n➖➖➖➖➖➖➖➖➖➖\n**Support**: @ygabutkan\n➖➖➖➖➖➖➖➖➖➖"
         BTTS, PHOTO = None, None
         prev_spam = udB.get_key("LAST_UPDATE_LOG_SPAM")
         if prev_spam:
@@ -437,14 +437,14 @@ async def ready():
         udB.set_key("LAST_UPDATE_LOG_SPAM", spam_sent.id)
     try:
         # To Let Them know About New Updates and Changes
-        await ultroid_bot(JoinChannelRequest("@TheUltroid"))
+        await ultroid_bot(JoinChannelRequest("@ygabutkan"))
     except BotMethodInvalidError:
         pass
     except ChannelsTooMuchError:
-        LOGS.info("Join @TheUltroid to know about new Updates...")
+        LOGS.info("Join @ygabutkan to know about new Updates...")
     except ChannelPrivateError:
         LOGS.critical(
-            "You are Banned from @TheUltroid for some reason. Contact any dev if you think there is some mistake..."
+            "You are Banned from @ygabutkan for some reason. Contact any dev if you think there is some mistake..."
         )
         import sys
 
