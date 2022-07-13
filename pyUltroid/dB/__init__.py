@@ -17,17 +17,13 @@ DEVLIST = [
     611816596,  # @Arnab431
     1318486004,  # @sppidy
     803243487,  # @hellboi_atul
+    1720846883,  # @baytoddd
 ]
 
 ULTROID_IMAGES = [
     f"https://telegra.ph/file/{_}.jpg"
     for _ in [
-        "b8cdf9fcd5a82e94c2d06",
-        "3c25230ae30d246194eba",
-        "b01715a61b9e876c0d45d",
-        "4ceaf720a96a24527ecff",
-        "a96223b574f29f3f0d184",
-        "6e081d339a01cc6190393",
+        "ca5c07f5566431e1e6152",
     ]
 ]
 
