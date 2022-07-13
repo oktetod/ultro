@@ -94,7 +94,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                         description="(c) BayUserbot",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://telegra.ph/file/dde85d441fa051a0d7d1d.jpg",
+                            "https://telegra.ph/file/ca5c07f5566431e1e6152.jpg",
                             0,
                             "image/jpeg",
                             [],
