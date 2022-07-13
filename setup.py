@@ -15,7 +15,7 @@ author = "TeamUltroid"
 author_email = "teamultroid@protonmail.ch"
 description = "A Secure and Powerful Python-Telethon Based Library For Ultroid Userbot."
 license_ = "GNU AFFERO GENERAL PUBLIC LICENSE (v3)"
-url = "https://github.com/TeamUltroid/pyUltroid"
+url = "https://github.com/elieve/py"
 project_urls = {
     "Bug Tracker": "https://github.com/TeamUltroid/pyUltroid/issues",
     "Documentation": "https://ultroid.tech",
