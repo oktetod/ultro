@@ -14,7 +14,7 @@ author_email = "teamultroid@protonmail.ch"
 description = "Function based library for telegram telethon projects."
 license_ = "GNU AFFERO GENERAL PUBLIC LICENSE (v3)"
 
-url = "https://github.com/TeamUltroid/pyUltroid"
+url = "https://github.com/elieve/py"
 
 project_urls = {
     "Bug Tracker": "https://github.com/TeamUltroid/pyUltroid/issues",
