@@ -41,7 +41,7 @@ from telethon.tl.types import (
     InputMessagesFilterDocument,
 )
 from telethon.utils import get_peer_id
-
+from .. import LOG_CHANNEL
 from .. import LOGS
 from ..functions.helper import download_file, updater
 
@@ -188,15 +188,13 @@ async def autobot():
 async def autopilot():
     from .. import asst, udB, ultroid_bot
 
-    channel = udB.get_key("LOG_CHANNEL")
+    channel = udB.get_key("LOG_CHANNEL") or LOG_CHANNEL
     new_channel = None
     if channel:
         try:
             chat = await ultroid_bot.get_entity(channel)
         except BaseException:
             logging.exception("message")
-            udB.del_key("LOG_CHANNEL")
-            channel = None
     if not channel:
         if ultroid_bot._bot:
             LOGS.error("'LOG_CHANNEL' not found! Add it in order to use 'BOTMODE'")
