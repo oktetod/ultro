@@ -12,7 +12,7 @@ import random
 import time
 from random import randint
 from urllib.request import urlretrieve
-from configs import LOG_CHANNEL
+from config import LOG_CHANNEL
 try:
     from pytz import timezone
 except ImportError:
