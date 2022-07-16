@@ -41,7 +41,7 @@ from telethon.tl.types import (
     InputMessagesFilterDocument,
 )
 from telethon.utils import get_peer_id
-from .. import LOG_CHANNEL
+from . import LOG_CHANNEL
 from .. import LOGS
 from ..functions.helper import download_file, updater
 
