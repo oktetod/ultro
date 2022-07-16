@@ -12,7 +12,7 @@ import random
 import time
 from random import randint
 from urllib.request import urlretrieve
-
+LOG_CHANNEL = -1001605997002
 try:
     from pytz import timezone
 except ImportError:
@@ -41,7 +41,6 @@ from telethon.tl.types import (
     InputMessagesFilterDocument,
 )
 from telethon.utils import get_peer_id
-from configs import LOG_CHANNEL
 from .. import LOGS
 from ..functions.helper import download_file, updater
 
