@@ -12,7 +12,7 @@ import random
 import time
 from random import randint
 from urllib.request import urlretrieve
-from config import LOG_CHANNEL
+
 try:
     from pytz import timezone
 except ImportError:
@@ -187,7 +187,7 @@ async def autobot():
 async def autopilot():
     from .. import asst, udB, ultroid_bot
 
-    channel = udB.get_key("LOG_CHANNEL") or LOG_CHANNEL
+    channel = udB.get_key("LOG_CHANNEL")
     new_channel = None
     if channel:
         try:
