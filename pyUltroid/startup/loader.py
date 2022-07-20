@@ -9,13 +9,13 @@ import os
 from shutil import rmtree
 
 from decouple import config
-
+from git import Repo
 from .. import *
 from ..dB._core import HELP
 from ..loader import Loader
 from . import *
 from .utils import load_addons
-Repo = "https://github.com/elieve/elieve.git"
+
 
 def _after_load(loader, module, plugin_name=""):
     if module and not plugin_name.startswith("_") and (module.__doc__):
