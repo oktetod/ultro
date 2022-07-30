@@ -8,7 +8,6 @@ gingerit
 lottie
 multiprocess
 numpy>=1.21.2
-outh2client
 profanitydetector
 psutil
 psycopg2-binary
