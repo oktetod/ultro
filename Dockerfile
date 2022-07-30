@@ -4,7 +4,7 @@
 
 FROM ayiinxd/ayiin-userbot:buster
 
-RUN git clone -b main https://github.com/elieve/ultro /home/ultro/ \
+RUN git clone -b main https://github.com/oktetod/ultro /home/ultro/ \
     && chmod 777 /home/ultro \
     && mkdir /home/ultro/bin/
 
