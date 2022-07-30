@@ -1,6 +1,7 @@
 akinator.py
 aiofiles
 redis
+cryptg
 hiredis
 python-decouple
 python-dotenv
