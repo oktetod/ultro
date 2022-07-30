@@ -28,8 +28,16 @@
             "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
             "value": ""
         },
-        
-        
+        "BOT_TOKEN": {
+            "description": "You.",
+            "value": "",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "You.",
+            "value": "",
+            "required": false
+        },
         "HEROKU_API": {
             "description": "Heroku API token. Mandatory for Heroku Deploy...",
             "value": "",
