@@ -1,5 +1,4 @@
 akinator.py
-apschedule
 aiofiles
 bs4
 cairosvg
