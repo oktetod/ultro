@@ -1,5 +1,9 @@
 akinator.py
 aiofiles
+redis
+hiredis
+python-decouple
+python-dotenv
 bs4
 cairosvg
 cfscrape
