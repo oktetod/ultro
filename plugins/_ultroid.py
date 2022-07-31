@@ -15,9 +15,9 @@ from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 
 REPOMSG = """
 • **BAY USERBOT** •\n
-• Repo - [Click Here](https://github.com/elieve/ultro)
+• Repo - [Click Here](https://github.com/oktetod/ultro:ultro)
 • Addons - [Click Here](https://github.com/elieve/elieve)
-• Support - @UltroidSupport
+• Support - @ygabutkan
 """
 
 RP_BUTTONS = [
